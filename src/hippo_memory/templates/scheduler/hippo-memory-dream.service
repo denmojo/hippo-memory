@@ -1,0 +1,7 @@
+[Unit]
+Description=hippo-memory nightly dream
+
+[Service]
+Type=oneshot
+ExecStart=__HIPPO__ dream
+Environment=PATH=__PATH__

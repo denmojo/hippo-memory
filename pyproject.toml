@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hippo-memory"
+version = "0.1.0"
+description = "Episodic memory and nightly dream consolidation for Claude Code sessions"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+recall = ["onnxruntime>=1.17", "tokenizers>=0.15", "numpy>=1.26"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+hippo = "hippo_memory.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hippo_memory = ["templates/commands/*.md", "templates/scheduler/*"]

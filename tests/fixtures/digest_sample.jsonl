@@ -1,0 +1,6 @@
+{"type":"user","timestamp":"2026-01-01T09:00:00Z","sessionId":"digest-fixture-0001","message":{"role":"user","content":[{"type":"text","text":"please summarize the deployment logs from last night"}]}}
+{"type":"assistant","timestamp":"2026-01-01T09:01:00Z","message":{"role":"assistant","content":[{"type":"text","text":"Checking the logs now."},{"type":"tool_use","name":"Bash","input":{"command":"tail -n 50 /var/log/app.log"}}]}}
+{"type":"user","timestamp":"2026-01-01T09:02:00Z","message":{"role":"user","content":[{"type":"text","text":"<system-reminder>internal note, not a user prompt</system-reminder>"}]}}
+{"type":"assistant","timestamp":"2026-01-01T09:03:00Z","message":{"role":"assistant","content":[{"type":"tool_use","name":"Read","input":{"file_path":"/tmp/example/report.txt"}}]}}
+{"type":"user","timestamp":"2026-01-01T09:04:00Z","message":{"role":"user","content":[{"type":"text","text":"looks good, thanks"}]}}
+{"type":"assistant","timestamp":"2026-01-01T09:05:00Z","message":{"role":"assistant","content":[{"type":"text","text":"Glad it helped. Let me know if you need anything else."}]}}

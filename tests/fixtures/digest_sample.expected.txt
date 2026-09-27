@@ -1,0 +1,25 @@
+== SESSION DIGEST ==
+source:  {PATH}
+session: digest-fixture-0001
+span:    2026-01-01 01:00 - 01:05 PST
+turns:   2 user / 3 assistant
+------------------------------------------------------------
+(complete digest: every user turn in full; all assistant prose and
+ tool calls; tool-result bodies replaced by line counts)
+
+### USER  [01:00]
+please summarize the deployment logs from last night
+
+### ASSISTANT  [01:01]
+Checking the logs now.
+  [tool: Bash] tail -n 50 /var/log/app.log
+
+### ASSISTANT  [01:03]
+  [tool: Read] /tmp/example/report.txt
+
+### USER  [01:04]
+looks good, thanks
+
+### ASSISTANT  [01:05]
+Glad it helped. Let me know if you need anything else.
+
